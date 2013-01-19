@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[ Backbone.Collection.extend({
+	model : '${1:ModelName}',
+	initialize : function() {
+		// Initialization
+	},
+	render : function() {
+		// Do stuff!
+	}
+});
+
+]]></content>
+	<tabTrigger>bbcoll</tabTrigger>
+	<scope>source.js</scope>
+	<description>Create a new Backbone collection</description>
+</snippet>

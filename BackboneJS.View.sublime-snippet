@@ -1,0 +1,21 @@
+<snippet>
+	<content><![CDATA[ Backbone.View.extend({
+	el : '${1:Parent}',
+	tagName : '${2:TagName}',
+	className: '${3:ClassName}',
+	events : {
+		// All event delegators here
+	},
+	initialize : function() {
+		// Initialization
+	},
+	render : function() {
+		// Put the thing on the page!
+	}
+});
+
+]]></content>
+	<tabTrigger>bbview</tabTrigger>
+	<scope>source.js</scope>
+	<description>Create a new Backbone view</description>
+</snippet>

@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[ Backbone.Model.extend({
+	idAttribute : '${1:_id}',
+	initialize : function() {
+		// Initialization
+	}
+});
+
+]]></content>
+	<tabTrigger>bbmodel</tabTrigger>
+	<scope>source.js</scope>
+	<description>Create a new Backbone model</description>
+</snippet>
