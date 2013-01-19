@@ -1,8 +1,8 @@
 <snippet>
-	<content><![CDATA[ Backbone.View.extend({
-	el : '${1:Parent}',
-	tagName : '${2:TagName}',
-	className: '${3:ClassName}',
+	<content><![CDATA[${1:Module}.${2:SubModule} = Backbone.View.extend({
+	el : '${3:Parent}',
+	tagName : '${4:TagName}',
+	className: '${5:ClassName}',
 	events : {
 		// All event delegators here
 	},

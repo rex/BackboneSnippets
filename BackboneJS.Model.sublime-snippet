@@ -1,6 +1,6 @@
 <snippet>
-	<content><![CDATA[ Backbone.Model.extend({
-	idAttribute : '${1:_id}',
+	<content><![CDATA[${1:Module}.${2:SubModule} = Backbone.Model.extend({
+	idAttribute : '${3:_id}',
 	initialize : function() {
 		// Initialization
 	}

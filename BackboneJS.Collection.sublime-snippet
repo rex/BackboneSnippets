@@ -1,6 +1,6 @@
 <snippet>
-	<content><![CDATA[ Backbone.Collection.extend({
-	model : '${1:ModelName}',
+	<content><![CDATA[${1:Module}.${2:SubModule} = Backbone.Collection.extend({
+	model : ${3:ModelName},
 	initialize : function() {
 		// Initialization
 	},
