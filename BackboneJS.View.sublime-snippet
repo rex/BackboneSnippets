@@ -3,6 +3,8 @@
 	el : '${3:Parent}',
 	tagName : '${4:TagName}',
 	className: '${5:ClassName}',
+	dispatcher : _.clone(Backbone.Events),
+	template : Handlebars.compile( ${6} ),
 	events : {
 		// All event delegators here
 	},
@@ -13,6 +15,7 @@
 		// Put the thing on the page!
 	}
 });
+
 
 ]]></content>
 	<tabTrigger>bbview</tabTrigger>
