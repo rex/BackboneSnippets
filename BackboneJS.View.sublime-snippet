@@ -4,15 +4,19 @@
 	tagName : '${4:TagName}',
 	className: '${5:ClassName}',
 	dispatcher : _.clone(Backbone.Events),
-	template : Handlebars.compile( ${6} ),
+	template : _.template( ${6} ),
 	events : {
 		// All event delegators here
 	},
 	initialize : function() {
-		// Initialization
+		console.log("Initializing ${7} View");
+		this.listenTo(this.model, "change", this.render);
 	},
 	render : function() {
 		// Put the thing on the page!
+		var self = this;
+
+		return this;
 	}
 });
 

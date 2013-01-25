@@ -1,7 +1,11 @@
 <snippet>
 	<content><![CDATA[${1:Module}.${2:SubModule} = Backbone.Model.extend({
 	idAttribute : '${3:_id}',
+	defaults : {
+		${4://}
+	},
 	initialize : function() {
+		console.log("Initializing ${5} Model");
 		// Initialization
 	}
 });

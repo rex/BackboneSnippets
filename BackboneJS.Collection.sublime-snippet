@@ -2,10 +2,8 @@
 	<content><![CDATA[${1:Module}.${2:SubModule} = Backbone.Collection.extend({
 	model : ${3:ModelName},
 	initialize : function() {
+		console.log("Initializing ${4} Collection");
 		// Initialization
-	},
-	render : function() {
-		// Do stuff!
 	}
 });
 
