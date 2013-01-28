@@ -22,13 +22,11 @@ Full Tab Completion Output
 
 Type `bbcoll`, press `tab`, and you get this:
 
-	Application.Collection =  Backbone.Collection.extend({
-		model : 'ModelName',
+	Module.SubModule = Backbone.Collection.extend({
+		model : ModelName,
 		initialize : function() {
+			console.log("Initializing  Collection");
 			// Initialization
-		},
-		render : function() {
-			// Do stuff!
 		}
 	});
 
@@ -37,9 +35,13 @@ Type `bbcoll`, press `tab`, and you get this:
 
 Type `bbmodel`, press `tab`, and you get this:
 
-	Application.Model =  Backbone.Model.extend({
+	Module.SubModule = Backbone.Model.extend({
 		idAttribute : '_id',
+		defaults : {
+			//
+		},
 		initialize : function() {
+			console.log("Initializing  Model");
 			// Initialization
 		}
 	});
@@ -49,18 +51,24 @@ Type `bbmodel`, press `tab`, and you get this:
 
 Type `bbview`, press `tab`, and you get this:
 
-	Application.View =  Backbone.View.extend({
+	Module.SubModule = Backbone.View.extend({
 		el : 'Parent',
 		tagName : 'TagName',
 		className: 'ClassName',
+		dispatcher : _.clone(Backbone.Events),
+		template : _.template(  ),
 		events : {
 			// All event delegators here
 		},
 		initialize : function() {
-			// Initialization
+			console.log("Initializing  View");
+			this.listenTo(this.model, "change", this.render);
 		},
 		render : function() {
 			// Put the thing on the page!
+			var self = this;
+
+			return this;
 		}
 	});
 
