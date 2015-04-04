@@ -1,3 +1,8 @@
+<p align="center">
+  <img src="http://i.imgur.com/9Mze1BM.png" />
+</p>
+
+
 Backbone Snippets
 ===
 
